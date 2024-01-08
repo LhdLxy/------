@@ -1,0 +1,19 @@
+@font-face {
+    font-family: font_one;
+    src: url("../font/和风书道昭和飞龙体-闪.ttf");
+}
+
+@font-face {
+    font-family: font_two;
+    src: url("../font/极字经典楷体简繁-闪.ttf");
+}
+
+@font-face {
+    font-family: font_three;
+    src: url("../font/极字经典魏体简繁-闪.ttf");
+}
+
+@font-face {
+    font-family: font_two;
+    src: url("../font/汉字之美涿鹿简繁-特宋.ttf");
+}

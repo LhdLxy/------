@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bj1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#last {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    background-image: linear-gradient(#ffffff, #fcc6c6);
+}
+
+.last-left img {
+    border-radius: 20px;
+    float: left;
+    margin: 10px;
+    width: 40%;
+    height: 550px;
+}
+
+.last-right {
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: center;
+    color: #505050;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    width: 50%;
+    height: 40%;
+}
+
+#content-one {
+    background-image: linear-gradient(#ffe2e2, #ff9090);
+    width: 90%;
+    text-align: center;
+    box-shadow: rgb(190, 190, 190) 20px 20px 60px, rgb(255, 255, 255) -20px -20px 60px;
+    margin: 100px auto auto;
+    margin-bottom: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.content {
+    border: 1px solid rgb(210, 210, 210);
+    position: relative;
+    width: 90%;
+    height: 520px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #ffffff6b;
+    box-shadow: 10px 10px 20px rgb(9 75 82 / 50%);
+}
+
+.content-left video {
+    width: 55%;
+    height: 500px;
+    float: left;
+    padding-top: 6px;
+}
+
+.content-right {
+    width: 30%;
+    height: auto;
+    font-size: 30px;
+    float: right;
+    color: #505050;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+/* --------------- */
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #4a4a4a;
+}
+
+.footer-main {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-main .foot-one {
+    font-size: 14px;
+}
+
+.footer-main .foot-one .box {
+    padding-top: 20px;
+}
+
+.footer-main .foot-one p {
+    display: flex;
+    color: #707070;
+    align-items: center;
+}
+
+.footer-main .foot-one img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-main .foot-one a {
+    color: #707070;
+    font-size: 20px;
+}
+
+.footer-main .foot-one a:hover {
+    color: white;
+}
+
+.footer-main .foot-two {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
+}
+
+.footer-main .foot-two a {
+    margin-left: 5px;
+    color: #707070;
+}

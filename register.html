@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./ico/花盆.png" type="image/x-icon">
+    <title>花田错-注册</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/register-media.css">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <style>
+        .form-one span {
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            color: red;
+            margin-top: -30px;
+            font-size: 13px;
+        }
+
+        #confirmPasswordError {
+            margin-top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 主体部分 -->
+        <div id="head-main">
+            <!-- logo -->
+            <div class="head-logo">
+                <a href="index.html">
+                    <img src="ico/花盆.png" alt="">
+                </a>
+            </div>
+            <!-- 小于767px -->
+            <div class="head-nav-client">
+                <a class="user-icon" href="login.html"></a>
+                <div class="menu-icon"></div>
+            </div>
+            <!-- nav left -->
+            <nav class="head-nav-pc">
+                <div><a href="index.html">花店首页<div class="right-arrow-icon">&gt;</div></a></div>
+                <div><a href="home_one.html">护花知识<div class="right-arrow-icon">&gt;</div></a></div>
+                <div><a href="home_two.html">插花鉴赏<div class="right-arrow-icon">&gt;</div></a></div>
+                <div><a href="shop.html">花店商城<div class="right-arrow-icon">&gt;</div></a></div>
+                <div><a href="cart.html">我的购物车<div class="right-arrow-icon">&gt;</div></a></div>
+            </nav>
+            <!-- nav right -->
+            <nav class="head-nav-login">
+                <div>
+                    <a href="login.html">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="banner-one">
+        <div class="logo">
+            <img src="ico/花盆.png" alt="">
+            <h1><a href="#" class="logo-bd">鲜花礼品网(花礼网)</a></h1>
+        </div>
+        <div class="search">
+            <form id="form">
+                <div class="input-group">
+                    <input name="keyword" type="text" class="form-control" placeholder="商品关键词">
+                    <span class="input-group-btn">
+                        <button id="test" class="btn btn-primary" type="button" onclick="this.form.submit()">搜索</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="service">
+            <span class="phone">
+                <span class="ico-phone"></span>000-0000-0000
+            </span>
+            <a id="header-chat" href="javascript:void(0);">
+                <span class="ico ico-headset"></span>在线客服
+            </a>
+        </div>
+    </div>
+    <div class="banner-two">
+        <div class="main">
+            <div class="main-one">
+                <div class="main-top">
+                    <div class="top-one"><a href="login.html">登录</a></div>
+                    <div class="top-two"><a href="register.html">注册</a></div>
+                    <div class="top-three"></div>
+                </div>
+            </div>
+            <div class="main-two">
+                <form class="bottom-form">
+                    <div class="form-one">
+                        <input type="text" placeholder="请输入账号" id="input-name">
+                        <span id="usernameError"></span>
+                        <input type="text" placeholder="请输入密码" id="input-password">
+                        <span id="passwordError"></span>
+                        <input type="text" placeholder="请再次输入密码" id="input-passwords">
+                        <span id="confirmPasswordError"></span>
+                    </div>
+                    <div class="form-two">
+                        <input type="submit" placeholder="注册" value="注册" href="login.html">
+                        <input type="reset" placeholder="重置" value="重置">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部部分 -->
+    <footer>
+        <div class="footer-main">
+            <div class="foot-one">
+                <div class="box">
+                    <p>
+                        <img src="ico/花盆.png" alt="">
+                        &nbsp;—&nbsp;
+                        <a href="index.html" title="首页">花店首页</a>
+                        &nbsp;&nbsp;
+                        <a href="home_one.html" title="护花知识">护花知识</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="home_two.html" title="插花鉴赏">插花鉴赏</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="shop.html" title="花店商城">花店商城</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="cart.html" title="我的购物车">我的购物车</a>
+                    </p>
+                </div>
+            </div>
+            <p class="foot-two">
+                <a>© 2023&nbsp;-&nbsp;2024&nbsp;&nbsp;花田园&nbsp;
+                    xxx小组&nbsp;&nbsp;版权所有</br>联系方式：+86&nbsp;000-0000-0000</a>
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    color: #232628;
+    font-family: tahoma, arial, "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div,
+ul,
+ol,
+p,
+li,
+input,
+span,
+label {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+}
+
+input::-webkit-autofill {
+    background-color: transparent;
+    background-image: none;
+    color: inherit;
+}
+
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+ul,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -webkit-focus-ring-color: transparent;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+span.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+a:hover,
+.fl .container-a>div a:hover {
+    color: #FF734C;
+}
+
+a:focus {
+    outline: none;
+}
+
+#main {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.fl-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+.fl:nth-child(odd),
+.fl:first-child,
+.fl:first-child+.fl+.fl,
+.fl:first-child+.fl+.fl+.fl+.fl,
+.fl:first-child+.fl+.fl+.fl+.fl+.fl+.fl {
+    background-color: #F7F9FA;
+}
+
+.fl-container .hd .more {
+    font-size: 14px;
+    line-height: 30px;
+    color: #71797F;
+    float: right;
+}
+
+.fl-container .hd h3 {
+    font-size: 26px;
+    line-height: 30px;
+    color: #232628;
+    font-weight: bold;
+}
+
+.fl-container .hd h3 span {
+    padding-left: 15px;
+    margin-left: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    border-left: 1px solid #71797F;
+}
+
+.fl-container .bd {
+    margin-top: 14px;
+    font-size: 0;
+}
+
+.fl-container .bd-l {
+    position: relative;
+    display: inline-block;
+    width: 288px;
+    height: 656px;
+    vertical-align: top;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 656px;
+
+}
+
+.fl-container .bd-l .banner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fl-container .bd-l::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 230, 230, .6);
+    transform: translateY(100%);
+    transition: all 1s ease-in-out;
+    box-sizing: border-box;
+    font-family: "font_three";
+}
+
+.fl:nth-child(1) .fl-container .bd-l::after {
+    content: "探寻单子叶植物之美";
+}
+
+.fl:nth-child(2) .fl-container .bd-l::after {
+    content: "不完全花的诗意舞台";
+}
+
+.fl:nth-child(3) .fl-container .bd-l::after {
+    content: "单生花的风华绝代";
+}
+
+.fl-container .bd-l:hover::after {
+    transform: translateY(0%);
+}
+
+.fl-products {
+    display: inline-block;
+    width: 912px;
+    vertical-align: top;
+}
+
+.fl-products-item {
+    position: relative;
+    display: inline-block;
+    width: 212px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    vertical-align: top;
+}
+
+.fl-products-item .img-box {
+    width: 100%;
+    height: 228px;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.fl-products-item .product-content {
+    position: relative;
+    padding: 10px 8px 14px;
+    text-align: center;
+    color: #232628;
+}
+
+.fl-products-item .gwc {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.fl-products-item .product-title {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.fl-products-item .product-copy {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.fl-products-item .product-price {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.fl-products-item .product-sell {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #71797F;
+    line-height: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #4a4a4a;
+}
+
+.footer-main {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-main .foot-one {
+    font-size: 14px;
+}
+
+.footer-main .foot-one .box {
+    padding-top: 20px;
+}
+
+.footer-main .foot-one p {
+    display: flex;
+    color: #707070;
+    align-items: center;
+}
+
+.footer-main .foot-one img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-main .foot-one a {
+    color: #707070;
+    font-size: 20px;
+}
+
+.footer-main .foot-one a:hover {
+    color: white;
+}
+
+.footer-main .foot-two {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
+}
+
+.footer-main .foot-two a {
+    margin-left: 5px;
+    color: #707070;
+}
+
+.img-box:hover {
+    transform: scale(1.04);
+}
+
+#rotation {
+    width: 1200px;
+    height: 600px;
+    margin: 100px auto 0;
+    border: 5px solid #f3f3f3;
+}
+
+.rotation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 100px;
+}
+
+#rotation-ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#rotation-ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease 0s;
+    opacity: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#rotation-ul .cc {
+    opacity: 1;
+}
+
+#rotation img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.rotation>span {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 100px;
+    background: rgba(230, 230, 230, .8);
+    color: white;
+    padding-top: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    z-index: 11;
+    cursor: pointer;
+    opacity: .4;
+    transition: all 0.5s ease 0s;
+}
+
+.rotation>span:hover {
+    opacity: 1;
+}
+
+.rotation>span:focus {
+    opacity: 1;
+    background-color: rgba(230, 230, 230, .6);
+}
+
+.rotation>#to-left {
+    left: 0px;
+    padding-right: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.rotation>#to-right {
+    right: 0;
+    padding-left: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

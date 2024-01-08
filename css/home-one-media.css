@@ -1,0 +1,95 @@
+/* 当页面大于 1200px 时，大屏幕，主要是 PC 端 */
+@media screen and (min-width:1200px) {}
+
+/*在 992 和 1199 像素之间的屏幕里，中等屏幕，分辨率低的 PC*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .contrnt {
+        height: 20em
+    }
+}
+
+/*在 768 和 991 像素之间的屏幕里，小屏幕，主要是 IPad*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .contrnt {
+        height: 200px
+    }
+}
+
+/*在 480 和 767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media screen and (max-width:767px) and (min-width:480px) {
+    .head-nav-pc {
+        position: fixed;
+        left: 0;
+        top: 65px;
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+        box-sizing: border-box;
+        opacity: 0;
+        font-size: 75px;
+        line-height: 85px;
+        padding-bottom: 14px;
+        background: rgba(255, 255, 255, .8);
+        width: 100%;
+        max-height: calc(100% - 20px);
+        transition: all .1s ease-in-out;
+    }
+
+    .head-nav-pc>div>a {
+        color: black;
+    }
+
+    .head-nav-login {
+        display: none;
+    }
+
+    .head-nav-pc>div {
+        width: calc(100% - 20px)
+    }
+
+    .head-nav-client {
+        display: flex;
+    }
+
+}
+
+/*在小于 480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media screen and (max-width:480px) {
+    .head-nav-pc {
+        position: fixed;
+        left: 0;
+        top: 65px;
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+        box-sizing: border-box;
+        opacity: 0;
+        font-size: 75px;
+        line-height: 85px;
+        padding-bottom: 14px;
+        background: rgba(255, 255, 255, .8);
+        width: 100%;
+        max-height: calc(100% - 20px);
+        transition: all .1s ease-in-out;
+    }
+
+    .head-nav-login {
+        display: none;
+    }
+
+    .head-nav-pc>div {
+        width: calc(100% - 20px)
+    }
+
+    .head-nav-client {
+        display: flex;
+    }
+
+    .right-arrow-icon {
+        display: block;
+    }
+
+    .head-nav-client {
+        display: flex;
+    }
+}
